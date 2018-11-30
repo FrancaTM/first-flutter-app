@@ -7,9 +7,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Startup Name Generator',
+      title: 'Startup Namer',
       theme: ThemeData(
+        fontFamily: "Ubuntu",
         primaryColor: Colors.white,
+        cursorColor: Colors.deepOrange,
+        splashColor: Colors.deepPurple,
+        accentColor: Colors.lightGreen,
+        backgroundColor: Colors.black,
+        dividerColor: Colors.grey.shade900,
+        selectedRowColor: Colors.deepOrange,
       ),
       home: RandomWords(),
     );
@@ -30,7 +37,10 @@ class RandomWordsState extends State<RandomWords> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Startup Name Generator"),
+        title: Text(
+          "Startup Name Generator",
+          style: TextStyle(fontFamily: "UbuntuCondensed"),
+        ),
         actions: <Widget>[
           IconButton(
             icon: const Icon(Icons.list),
